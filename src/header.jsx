@@ -31,9 +31,10 @@ const Header = () => {
   };
 
   const carouselImages = [
-    'imagen1.jpg',
-    'imagen2.jpg',
-    'imagen3.jpg',
+    'public/dulce1.jpg', // Imagen anterior agregada
+    'src/imagenes/positiva.jpg', // Nueva imagen
+    'src/imagenes/leon.jpg', // Nueva imagen
+    'src/imagenes/dulce.jpg', // Nueva imagen
   ];
 
   return (
@@ -46,7 +47,7 @@ const Header = () => {
           <li><a href="/contacto" style={linkStyle}>A donde vamos</a></li>
         </ul>
       </nav>
-      <div style={{ width: '50%', maxHeight: '200px' }}>
+      <div style={{ width: '70%', maxWidth: '400px' }}>
         <Carousel showArrows={true} showStatus={false} showThumbs={false}>
           {carouselImages.map((image, index) => (
             <div key={index}>
