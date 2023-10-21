@@ -47,8 +47,8 @@ const Header = () => {
           <li><a href="/contacto" style={linkStyle}>A donde vamos</a></li>
         </ul>
       </nav>
-      <div style={{ width: '70%', maxWidth: '400px' }}>
-        <Carousel showArrows={true} showStatus={false} showThumbs={false}>
+      <div style={{ width: '100%', maxWidth: '400px' }}>
+        <Carousel showArrows={true} showStatus={false} showThumbs={false} className="carousel-responsivo">
           {carouselImages.map((image, index) => (
             <div key={index}>
               <img src={image} alt={`Carousel ${index}`} />

@@ -40,3 +40,28 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Estilos base para todas las pantallas */
+body {
+  font-size: 16px;
+}
+
+.carrusel {
+  /* Estilos para mantener el carrusel en su ubicación original en todas las pantallas */
+}
+
+/* Estilos para pantallas pequeñas (como dispositivos móviles) */
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+  
+  .carrusel {
+    order: 1; /* Cambiar el orden del carrusel para colocarlo al principio en pantallas pequeñas */
+  }
+}
+
+/* Estilos adicionales para pantallas grandes (tablets y pantallas más grandes) */
+@media (min-width: 768px) {
+  /* Agrega aquí los estilos adicionales para pantallas grandes si es necesario */
+}
